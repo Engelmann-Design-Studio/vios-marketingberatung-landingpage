@@ -53,3 +53,4 @@ Die Landing Page verwendet:
 - Weitere Sektionen implementieren
 - Kontaktformular integrieren
 - SEO-Optimierungen
+# vios-marketingberatung-landingpage
