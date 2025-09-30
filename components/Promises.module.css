@@ -1,0 +1,134 @@
+.promises {
+  background-color: white;
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1A1D24;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #4A4A4A;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.promisesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.promiseCard {
+  background: #F8F9FA;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #E9ECEF;
+}
+
+.promiseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.iconContainer {
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+  display: block;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1A1D24;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.cardHighlight {
+  background: #F08A4B;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .promisesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .promises {
+    padding: 3rem 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .promiseCard {
+    padding: 2rem 1.5rem;
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .promiseCard {
+    padding: 1.5rem 1rem;
+  }
+}

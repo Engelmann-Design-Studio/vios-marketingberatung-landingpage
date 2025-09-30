@@ -1,0 +1,266 @@
+.testimonials {
+  background-color: #1A1D24;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.headerContent {
+  text-align: left;
+}
+
+.headerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerPortrait {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #E5E7EB;
+  line-height: 1.6;
+}
+
+.testimonialsLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.testimonialTopLeft {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 2rem;
+}
+
+.testimonialBottomLeft {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.testimonialBottomRight {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.testimonialContent {
+  flex: 1;
+}
+
+.authorImage {
+  flex-shrink: 0;
+}
+
+.authorPortrait {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.topTestimonialImage {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.topAuthorPortrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.quote {
+  font-size: 1.125rem;
+  color: white;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+.rating {
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 1.2rem;
+  margin: 0 0.1rem;
+}
+
+.author {
+  color: #E5E7EB;
+}
+
+.authorName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.authorTitle {
+  font-size: 0.9rem;
+  color: #9CA3AF;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.ctaButton {
+  background-color: #10B981;
+  color: white;
+  border: none;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+  width: 100%;
+  max-width: 500px;
+}
+
+.ctaButton:hover {
+  background-color: #059669;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .headerContent {
+    text-align: center;
+  }
+  
+  .testimonialsLayout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  
+  .testimonialTopLeft {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .testimonialBottomLeft {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .testimonialBottomRight {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 3rem 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .testimonialTopLeft {
+    padding: 1.5rem;
+  }
+  
+  .testimonialBottomLeft,
+  .testimonialBottomRight {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .quote {
+    font-size: 1rem;
+  }
+  
+  .ctaButton {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .testimonialTopLeft {
+    padding: 1rem;
+  }
+  
+  .authorPortrait {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .topAuthorPortrait {
+    width: 120px;
+    height: 120px;
+  }
+}
+

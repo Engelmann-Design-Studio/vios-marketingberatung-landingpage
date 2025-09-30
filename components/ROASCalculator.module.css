@@ -1,0 +1,361 @@
+.roasCalculator {
+  background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(135deg, #1A1D24 0%, #2D3748 100%);
+  padding: 2rem;
+  color: white;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: white;
+  color: #1A1D24;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #F08A4B;
+}
+
+.inputHint {
+  font-size: 0.75rem;
+  color: #6B7280;
+  margin-top: 0.25rem;
+}
+
+.optional {
+  color: #9CA3AF;
+  font-weight: 400;
+}
+
+.resultCard {
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 3px solid;
+}
+
+.resultCard.green {
+  background: #F0FDF4;
+  border-color: #22C55E;
+}
+
+.resultCard.blue {
+  background: #EFF6FF;
+  border-color: #3B82F6;
+}
+
+.resultCard.yellow {
+  background: #FEFCE8;
+  border-color: #EAB308;
+}
+
+.resultCard.orange {
+  background: #FFF7ED;
+  border-color: #F97316;
+}
+
+.resultCard.red {
+  background: #FEF2F2;
+  border-color: #EF4444;
+}
+
+.roasDisplay {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.roasLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6B7280;
+  margin-bottom: 0.5rem;
+}
+
+.roasValue {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.roasValue.greenText {
+  color: #16A34A;
+}
+
+.roasValue.blueText {
+  color: #2563EB;
+}
+
+.roasValue.yellowText {
+  color: #CA8A04;
+}
+
+.roasValue.orangeText {
+  color: #EA580C;
+}
+
+.roasValue.redText {
+  color: #DC2626;
+}
+
+.ratingBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.ratingBadge.greenBadge {
+  background: #DCFCE7;
+  color: #166534;
+}
+
+.ratingBadge.blueBadge {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.ratingBadge.yellowBadge {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.ratingBadge.orangeBadge {
+  background: #FED7AA;
+  color: #C2410C;
+}
+
+.ratingBadge.redBadge {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.metric {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.metricLabel {
+  font-size: 0.75rem;
+  color: #6B7280;
+  margin-bottom: 0.25rem;
+}
+
+.metricValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F08A4B;
+}
+
+.metricValue.profit {
+  color: #16A34A;
+}
+
+.metricValue.loss {
+  color: #DC2626;
+}
+
+.interpretation {
+  background: linear-gradient(135deg, #F8F5ED 0%, #E8E0D0 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.interpretationTitle {
+  font-weight: 700;
+  color: #1A1D24;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.interpretationContent {
+  font-size: 0.875rem;
+  color: #1A1D24;
+  line-height: 1.6;
+}
+
+.interpretationContent p {
+  margin: 0 0 0.5rem 0;
+}
+
+.interpretationContent p:last-child {
+  margin-bottom: 0;
+}
+
+.successText {
+  color: #166534 !important;
+}
+
+.warningText {
+  color: #2563EB !important;
+}
+
+.dangerText {
+  color: #DC2626 !important;
+}
+
+.tipsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tipCard {
+  background: #F8FAFC;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.tipTitle {
+  font-weight: 600;
+  color: #1E293B;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.tipList {
+  font-size: 0.75rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tipList li {
+  margin-bottom: 0.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .roasCalculator {
+    padding: 2rem 1rem;
+  }
+  
+  .content {
+    padding: 1.5rem;
+  }
+  
+  .inputGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .metricsGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .tipsGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .roasValue {
+    font-size: 2.5rem;
+  }
+  
+  .metricValue {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+  }
+  
+  .roasValue {
+    font-size: 2rem;
+  }
+}
